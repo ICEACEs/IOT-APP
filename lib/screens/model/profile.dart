@@ -6,6 +6,4 @@ class Profile {
       required this.confirmPassword});
 }
 
-class LoginCheck {
-  bool hasLogin = false;
-}
+

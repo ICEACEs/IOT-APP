@@ -17,7 +17,6 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   bool firebaseErr = false;
   final formKey = GlobalKey<FormState>();
-  LoginCheck auth = LoginCheck();
   Profile profile = Profile(
     email: '',
     password: '',
@@ -201,7 +200,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                                         ToastGravity.CENTER,
                                                   ),
                                                   formKey.currentState!.reset(),
-                                                  auth.hasLogin = true,
                                                   Future.delayed(
                                                       const Duration(
                                                           seconds: 1),
